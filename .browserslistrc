@@ -1,0 +1,12 @@
+# https://github.com/browserslist/browserslist#readme
+
+>= 0.5%
+last 2 major versions
+not dead
+Chrome >= 88
+Firefox >= 84
+Firefox ESR
+iOS >= 14
+Safari >= 14
+not Explorer <= 11
+not op_mini all

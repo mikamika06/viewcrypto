@@ -1,0 +1,8 @@
+@import url('../fonts/index.css');
+
+@layer base {
+  button, a, .theme-transition {
+    transition: color 200ms ease-in-out, background-color 200ms ease-in-out;
+  }
+ 
+}
