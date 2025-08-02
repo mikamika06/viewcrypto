@@ -6,8 +6,10 @@ import { preload } from 'swr';
 import { Coin } from '@/features';
 import { capitalize, fetcher } from '@/utils/helpers';
 
-const baseURL = import.meta.env.VITE_COINGECKO_BASE_URL as string;
-
+const baseURL = process.env.NODE_ENV === 'production' 
+  ? '/api/proxy?endpoint=' 
+  : import.meta.env.VITE_COINGECKO_BASE_URL;
+  
 const CoinPage: FC = () => {
   const { id } = useParams<string>();
   const coin = id as string;

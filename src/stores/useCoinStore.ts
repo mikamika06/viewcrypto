@@ -3,8 +3,10 @@ import useSWR, { type SWRResponse } from 'swr';
 
 import type { CoinMarketData } from '@/types/Api/Coingecko';
 
-const baseURL = import.meta.env.VITE_COINGECKO_BASE_URL as string;
-
+const baseURL = process.env.NODE_ENV === 'production' 
+  ? '/api/proxy?endpoint=' 
+  : import.meta.env.VITE_COINGECKO_BASE_URL;
+  
 const useCoinStore = (): SWRResponse<CoinMarketData, Error, unknown> => {
   const { id } = useParams<string>();
   const coin = id as string;
