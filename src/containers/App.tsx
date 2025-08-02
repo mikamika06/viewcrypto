@@ -7,6 +7,7 @@ import {
   SWRProvider,
 } from '@/lib/Provider';
 import Routes from '@/routes';
+import { Analytics } from '@vercel/analytics/react';
 
 const App: FC = () => {
   return (
@@ -16,6 +17,7 @@ const App: FC = () => {
           <Routes />
         </SWRProvider>
       </LoaderProvider>
+      <Analytics />
     </MantineProvider>
   );
 };

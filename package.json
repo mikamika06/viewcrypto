@@ -1,8 +1,7 @@
 {
   "name": "viewcrypto",
   "title": "ViewCrypto App",
-"description": "ViewCrypto - an application for tracking cryptocurrencies",
-  
+  "description": "ViewCrypto - an application for tracking cryptocurrencies",
   "private": true,
   "version": "1.0.0",
   "type": "module",
@@ -32,6 +31,7 @@
     "@tabler/icons-react": "^2.22.0",
     "@tanstack/react-table": "^8.9.3",
     "@types/node": "^20.3.0",
+    "@vercel/analytics": "^1.5.0",
     "axios": "^1.4.0",
     "clsx": "^1.2.1",
     "d3": "^7.8.5",
